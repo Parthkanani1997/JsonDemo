@@ -19,7 +19,14 @@
     dicJson=[[NSMutableDictionary alloc]init];
     
     NSString *urlAsString = [NSString stringWithFormat:@"https://www.cricbuzz.com/match-api/livematches.json"];
+    /*
+    Sample APIS for Practice:
+    1.https://cricketapi-icc.pulselive.com/fixtures/8175/scoring
+    2.https://cricketapi-icc.pulselive.com/fixtures?tournamentTypes=I,WI&startDate=2019-02-20&endDate=2019-02-24&pageSize=50&sort=desc
+    3.https://cricketapi-icc.pulselive.com/fixtures/8792/scoring
+    4.https://cricketapi-icc.pulselive.com/fixtures/10876/scoring
     
+    */
     NSCharacterSet *set = [NSCharacterSet URLQueryAllowedCharacterSet];
     NSString *encodedUrlAsString = [urlAsString stringByAddingPercentEncodingWithAllowedCharacters:set];
     
